@@ -6,10 +6,8 @@
     "node": "10.x"
   },
   "scripts": {
-    "heroku-token": "script/encrypt-heroku-auth-token.js",
     "start": "node server",
     "build": "cd react-ui/ && npm install && npm run build",
-    "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
     "standard": "standard index.js",
     "test": "nyc ./node_modules/.bin/ava -v"
   },

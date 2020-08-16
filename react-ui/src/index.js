@@ -6,12 +6,14 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Provider} from 'react-redux'
 import {Router} from 'react-router-dom'
+import Routes from './routes'
 import store from './store'
+import { createBrowserHistory } from 'history';
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router>
-      <App />
+    <Router history={createBrowserHistory()}>
+      <Routes />
     </Router>
   </Provider>,
   document.getElementById('root')

@@ -1,16 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
+import {Navbar} from 'react-bootstrap'
 
-const Navbar = () => {
+const Nav = () => {
   return (
-    <nav>
-      <div>Home</div>
-      <div>
-        <Link to="/about">About</Link>
-        <Link to="/settings">Settings</Link>
-      </div>
-    </nav>
+    <Navbar bg="dark" variant="light">
+    <Navbar.Brand href="#home">
+      <img
+        alt=""
+        src="react-ui/public/favicon.ico"
+        width="30"
+        height="30"
+        className="d-inline-block align-top"
+      />{' '}
+      Beyond Dope
+    </Navbar.Brand>
+  </Navbar>
   );
 };
 
-export default Navbar;
+export default Nav;

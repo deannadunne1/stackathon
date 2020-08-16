@@ -1,10 +1,20 @@
 import React from 'react'
+import {Container, Row, Col} from 'react-bootstrap'
 
 
 const Home = () => {
   return (
     <div id="homePage">
-      <h1>whatsup</h1>
+      <Container fluid>
+        <Row>
+          <Col>1</Col>
+          <Col>2</Col>
+        </Row>
+        <Row>
+          <Col>1</Col>
+          <Col>2</Col>
+        </Row>
+      </Container>
     </div>
   )
 }

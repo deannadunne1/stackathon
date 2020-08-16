@@ -1,13 +1,12 @@
 import React from 'react'
 import {withRouter, Route, Switch} from 'react-router-dom'
 import {Home} from './components'
-import App from './App'
 
 const Routes = () => {
   return (
     <Switch>
-      <Route path='/home' component={Home} />
-      <Route exact path='/' component={App} />
+      <Route component={Home} />
+      {/* <Route path='/home' component={Home} /> */}
     </Switch>
   )
 }

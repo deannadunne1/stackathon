@@ -6,17 +6,17 @@ export default function DrugSearch() {
     <div id="drugSearch">
       <div>
         <div>
-        <form>
-          <label>
-            Substance Name:
-            <input type="text" name="name" />
-          </label>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
+          <form>
+            <label>
+              Substance Name:
+              <input type="text" name="name" />
+            </label>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       <div>Saved drugs?</div>
       </div>
-      <div>Drugs List/ Single Drug</div>
+      Drugs List/ Single Drug
     </div>
   );
 }

@@ -16,3 +16,9 @@ code {
 p + p {
   margin-top: 0;
 }
+
+#homePage {
+  display: flex;
+  justify-content: center;
+  background-color: pink;
+}

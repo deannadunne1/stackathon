@@ -1,12 +1,15 @@
 import React from 'react'
 import {withRouter, Route, Switch} from 'react-router-dom'
-import {Home} from './components'
+import {Home, Emergency, DrugSearch, Alone, Settings} from './components'
 
 const Routes = () => {
   return (
     <Switch>
+      <Route path='/emergency' component={Emergency} />
+      <Route path='/drugsearch' component={DrugSearch} />
+      <Route path='/alone' component={Alone} />
+      <Route path='/settings' component={Settings} />
       <Route component={Home} />
-      {/* <Route path='/home' component={Home} /> */}
     </Switch>
   )
 }

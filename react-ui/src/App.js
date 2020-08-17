@@ -1,7 +1,7 @@
-import React from 'react';
-import './App.css';
-import {Navbar, Footer} from './components'
-import Routes from './routes'
+import React from "react";
+import "./App.css";
+import { Navbar, Footer } from "./components";
+import Routes from "./routes";
 
 function App() {
   // const [message, setMessage] = useState(null);
@@ -32,31 +32,11 @@ function App() {
 
   return (
     <div className="App">
-      {/* <header className="App-header">
-        { process.env.NODE_ENV === 'production' ?
-            <p>
-              This is a production build from create-react-app.
-            </p>
-          : <p>
-              Edit <code>src/App.js</code> and save to reload.
-            </p>
-        }
-        <p>{'« '}<strong>
-          {isFetching
-            ? 'Fetching message from API'
-            : message}
-        </strong>{' »'}</p>
-      </header> */}
-      <div className="page">
-        <Navbar />
-        <Routes />
-      </div>
-      <footer>
-        <Footer />
-      </footer>
+      <Navbar />
+      <Routes />
+      <Footer />
     </div>
   );
-
 }
 
 export default App;

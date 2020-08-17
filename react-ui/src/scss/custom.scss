@@ -1,0 +1,19 @@
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+$body-bg: #FFE4CC;
+$body-color: white;
+
+$theme-colors: (
+  "primary": #EEB2FF,
+  "secondary": #D9FF99,
+  "accent": #A6EFFF,
+  "info": #D68DEB,
+  "success": #D9FF99,
+  "danger": #ff4136
+);
+
+@import "node_modules/bootstrap/scss/bootstrap"
+
